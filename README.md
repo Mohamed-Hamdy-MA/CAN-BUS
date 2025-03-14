@@ -32,4 +32,8 @@ This project is an **educational simulation** designed to **practice CAN protoco
 This project is purely for **educational purposes**, helping embedded engineers gain hands-on experience with **CAN communication and Vector CANoe simulation**.  
   
 ## Video  
-[![]()](https://raw.githubusercontent.com/Mohamed-Hamdy-MA/CAN-BUS/main/Video.mp4)
+
+
+https://github.com/user-attachments/assets/46dc4b9e-449f-40c7-9f03-fe13a2dd0d38
+
+
