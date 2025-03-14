@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Panel Type="Vector.CANalyzer.Panels.PanelSerializer, Vector.CANalyzer.Panels.Serializer, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null">
+  <Object Type="Vector.CANalyzer.Panels.Runtime.Panel, Vector.CANalyzer.Panels.Common, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="Panel" ControlName="Dashboard">
+    <Object Type="Vector.CANalyzer.Panels.Design.SwitchControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="X1836ff83e0b3ae4e93e97bde5aef1f086d43" ControlName="Switch / Indicator 1">
+      <Property Name="Name">X1836ff83e0b3ae4e93e97bde5aef1f086d43</Property>
+      <Property Name="Size">62, 81</Property>
+      <Property Name="Location">374, 99</Property>
+      <Property Name="SymbolConfiguration">8;16;;;;Acceleration_Message_SYSVARIABLE;1;;;-1;;;Value;;;0</Property>
+      <Property Name="TabIndex">2</Property>
+      <Property Name="IsButton">True</Property>
+      <Property Name="Epsilon">0</Property>
+      <Property Name="Increment">1</Property>
+      <Property Name="StartValue">0</Property>
+      <Property Name="SwitchValuesVTXml">&lt;Version&gt;2&lt;/Version&gt;&lt;Count&gt;2&lt;/Count&gt;&lt;RxValue&gt;0&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;0&lt;/TxValue&gt;&lt;RxValue&gt;1&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;1&lt;/TxValue&gt;</Property>
+      <Property Name="SwitchValuesVT">1;2;0/Lower/0;1/Lower/1</Property>
+      <Property Name="SwitchValues">1;2;0;1</Property>
+      <Property Name="SwitchValuesRx">1;2;0;1</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.AnalogGaugeControl, Vector.CANalyzer.Panels.AnalogGauge, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="X36017cb2e16fee4a09ea54eeffa7ba8cecad" ControlName="Analog Gauge 1">
+      <Property Name="Name">X36017cb2e16fee4a09ea54eeffa7ba8cecad</Property>
+      <Property Name="Size">184, 181</Property>
+      <Property Name="Location">116, 40</Property>
+      <Property Name="ScaleMin">0</Property>
+      <Property Name="ScaleMax">255</Property>
+      <Property Name="LowerRangeLimit">0</Property>
+      <Property Name="UpperRangeLimit">255</Property>
+      <Property Name="MinColor">White</Property>
+      <Property Name="MidColor">White</Property>
+      <Property Name="MaxColor">White</Property>
+      <Property Name="ScaleAngle">270</Property>
+      <Property Name="BorderStyle">FixedSingle</Property>
+      <Property Name="BackgroundColor">Black</Property>
+      <Property Name="ArrowWidth">3</Property>
+      <Property Name="ArrowColor">255, 31, 73, 125</Property>
+      <Property Name="CenterColor">255, 31, 73, 125</Property>
+      <Property Name="LegendText">km/h</Property>
+      <Property Name="LegendTextColor">White</Property>
+      <Property Name="LegendTextFont">Microsoft Sans Serif, 8.25pt</Property>
+      <Property Name="IsLegendText">False</Property>
+      <Property Name="LegendColor">White</Property>
+      <Property Name="MainTicksNumber">12</Property>
+      <Property Name="TicksColor">White</Property>
+      <Property Name="CurrentPosition">0</Property>
+      <Property Name="LengthMainTicks">10</Property>
+      <Property Name="IsFrame">False</Property>
+      <Property Name="IsMargin">False</Property>
+      <Property Name="ScaleMargin">0</Property>
+      <Property Name="SymbolConfiguration">8;2;DataBase;Speed_Sensor;Speed_Message;Speed_Value;1;CAN;;-1;;;Value;;;0</Property>
+      <Property Name="CriticalProps" Member="AAEAAAD/////AQAAAAAAAAAEAQAAAC9TeXN0ZW0uUmVmbGVjdGlvbi5NZW1iZXJJbmZvU2VyaWFsaXphdGlvbkhvbGRlcgcAAAAETmFtZQxBc3NlbWJseU5hbWUJQ2xhc3NOYW1lCVNpZ25hdHVyZQpTaWduYXR1cmUyCk1lbWJlclR5cGUQR2VuZXJpY0FyZ3VtZW50cwEBAQEBAAMIDVN5c3RlbS5UeXBlW10GAgAAAAUuY3RvcgYDAAAAXFZlY3Rvci5DQU5hbHl6ZXIuUGFuZWxzLkFuYWxvZ0dhdWdlLCBWZXJzaW9uPTE3LjMuOTEuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsBgQAAAA2VmVjdG9yLkNBTmFseXplci5QYW5lbHMuRGVzaWduLkdhdWdlQ3JpdGljYWxQcm9wZXJ0aWVzBgUAAAAyVm9pZCAuY3RvcihEb3VibGUsIERvdWJsZSwgRG91YmxlLCBEb3VibGUsIERvdWJsZSkGBgAAAFAuY3RvcihTeXN0ZW0uRG91YmxlLCBTeXN0ZW0uRG91YmxlLCBTeXN0ZW0uRG91YmxlLCBTeXN0ZW0uRG91YmxlLCBTeXN0ZW0uRG91YmxlKQEAAAAKCw==">
+        <Argument>0</Argument>
+        <Argument>255</Argument>
+        <Argument>0</Argument>
+        <Argument>0</Argument>
+        <Argument>255</Argument>
+      </Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.PictureBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="X27447ba7ed8fae4ebae96b1e4171aacc67d5" ControlName="Picture Box 1">
+      <Property Name="Name">X27447ba7ed8fae4ebae96b1e4171aacc67d5</Property>
+      <Property Name="Size">456, 270</Property>
+      <Property Name="Location">63, 0</Property>
+      <Property Name="ImageFile">..\..\Dashboard.png</Property>
+    </Object>
+    <Property Name="Name">Panel</Property>
+    <Property Name="Size">580, 270</Property>
+    <Property Name="Location">0, 0</Property>
+    <Property Name="BackColor">Black</Property>
+  </Object>
+</Panel>

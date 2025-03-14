@@ -1,0 +1,30 @@
+﻿/*@!Encoding:65001*/
+includes
+{
+  
+}
+
+variables
+{
+  msTimer AcceleratorTimer;
+  message Acceleration_Message Acceleration_Message_VARIABLE;
+}
+
+on start
+{
+  write("Starting ECU1 (Accelerator)");
+  Acceleration_Message_VARIABLE.Acceleration_Command = 0;
+  setTimer(AcceleratorTimer, 1000);
+}
+
+on timer AcceleratorTimer
+{
+  Acceleration_Message_VARIABLE.Acceleration_Command = @sysvar::Acceleration_Message_SYSVARIABLE;
+  output(Acceleration_Message_VARIABLE);
+  setTimer(AcceleratorTimer, 1000);
+}
+
+on message Speed_Message
+{
+    write("ECU1 (Accelerator) recevied speed message from ECU2 (Speed Sensor)");
+}

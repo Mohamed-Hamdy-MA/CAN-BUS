@@ -1,0 +1,56 @@
+﻿/*@!Encoding:65001*/
+includes
+{
+  
+}
+
+variables
+{
+  enum {NoAcceleration, Acceleration}Acceleration_Command_FLAG;
+  msTimer SpeedSensorTimer;
+  message Speed_Message Speed_Message_VARIABLE;
+}
+
+on start
+{
+  write("Starting ECU2 (SpeedSensor)");
+  Speed_Message_VARIABLE.Speed_Value = 0;
+  setTimer(SpeedSensorTimer, 100);
+}
+
+on timer SpeedSensorTimer
+{
+  switch (Acceleration_Command_FLAG)
+  {
+    case NoAcceleration:
+      if (Speed_Message_VARIABLE.Speed_Value > 0)
+      {
+        Speed_Message_VARIABLE.Speed_Value -= 1;
+      }
+      break;
+      
+    case Acceleration:
+      if (Speed_Message_VARIABLE.Speed_Value < 255)
+      {
+        Speed_Message_VARIABLE.Speed_Value += 1;
+      }
+      break;
+  }
+  
+  output(Speed_Message_VARIABLE);
+  setTimer(SpeedSensorTimer, 100);
+}
+
+on message Acceleration_Message
+{
+  write("ECU2 (SpeedSensor) recevied Acceleration message from ECU1 (Accelerator)");
+  if (this.Acceleration_Command == 0)
+  {
+    Acceleration_Command_FLAG = NoAcceleration;
+  }
+  else
+  {
+    Acceleration_Command_FLAG = Acceleration;    
+  }
+}
+
